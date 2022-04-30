@@ -1,0 +1,16 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 0.228
+anchor_bottom = 0.2
+margin_left = 216.0
+margin_top = 121.0
+margin_right = 617.528
+margin_bottom = 111.0
+bbcode_enabled = true
+bbcode_text = "RUSH OF THE MACHINES"
+text = "RUSH OF THE MACHINES"
