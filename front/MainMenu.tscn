@@ -3,12 +3,21 @@
 [ext_resource path="res://Logo.tres" type="DynamicFont" id=1]
 [ext_resource path="res://StartGameButton.gd" type="Script" id=2]
 [ext_resource path="res://Bold.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Regular.tres" type="DynamicFont" id=4]
-[ext_resource path="res://ExitGameButton.gd" type="Script" id=5]
+[ext_resource path="res://MenuWorld.tscn" type="PackedScene" id=4]
+[ext_resource path="res://big_union_title_4.png" type="Texture" id=5]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="BigUnionTitle4" type="Sprite" parent="."]
+modulate = Color( 0.713726, 0.623529, 0.623529, 1 )
+position = Vector2( 503, 310.719 )
+scale = Vector2( 0.439732, 0.411004 )
+texture = ExtResource( 5 )
+
+[node name="MenuWorld" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2, -147 )
 
 [node name="GameLogo" type="RichTextLabel" parent="."]
 anchor_right = 0.228
@@ -22,33 +31,12 @@ bbcode_enabled = true
 bbcode_text = "RUSH OF THE MACHINES"
 text = "RUSH OF THE MACHINES"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 385.0
-margin_top = 236.0
-margin_right = 629.0
-margin_bottom = 296.0
-
-[node name="ExitGameButton" type="Button" parent="VBoxContainer"]
-margin_right = 244.0
-margin_bottom = 28.0
-custom_fonts/font = ExtResource( 4 )
-text = "Exit game"
-script = ExtResource( 5 )
-
-[node name="StartGameButton" type="Button" parent="VBoxContainer"]
-margin_top = 32.0
-margin_right = 244.0
-margin_bottom = 60.0
-custom_fonts/font = ExtResource( 3 )
-text = "Start game"
-script = ExtResource( 2 )
-
 [node name="GameLogo2" type="RichTextLabel" parent="."]
 anchor_right = 0.228
 anchor_bottom = 0.2
-margin_left = 720.0
+margin_left = 590.0
 margin_top = 135.0
-margin_right = 1066.53
+margin_right = 1456.53
 margin_bottom = 111.0
 rect_scale = Vector2( 0.25, 0.25 )
 custom_fonts/normal_font = ExtResource( 1 )
@@ -56,3 +44,18 @@ bbcode_enabled = true
 bbcode_text = "RUSH OF THE MACHINES"
 meta_underlined = false
 text = "RUSH OF THE MACHINES"
+
+[node name="StartGameButton" type="Button" parent="."]
+margin_left = 385.0
+margin_top = 236.0
+margin_right = 629.0
+margin_bottom = 264.0
+custom_fonts/font = ExtResource( 3 )
+text = "Start game"
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.168627, 0.0196078, 0, 1 )
+self_modulate = Color( 0.0980392, 0.0196078, 0.0196078, 1 )
+margin_right = 1035.0
+margin_bottom = 606.0
