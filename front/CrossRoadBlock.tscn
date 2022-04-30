@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Pictures/big_cross_road_simple.png" type="Texture" id=1]
+
+[node name="CrossRoad" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -64.0
+margin_top = -64.0
+margin_right = 448.0
+margin_bottom = 448.0
+rect_scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
