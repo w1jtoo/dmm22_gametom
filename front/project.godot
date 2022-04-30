@@ -12,7 +12,6 @@ config_version=4
 
 config/name="Front"
 run/main_scene="res://MainMenu.tscn"
-run/main_scene="res://Map.tscn"
 config/icon="res://icon.png"
 
 [physics]
