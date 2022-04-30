@@ -16,7 +16,7 @@ func _ready():
 	RoadMap.add_child(car)
 	var start = rng.randf_range(100, 200)
 	car.position.x -= start
-	car.position.y -= 100
+	car.position.y -= 65
 	car.blue.show()
 
 
