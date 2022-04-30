@@ -10,12 +10,13 @@ onready var texture = $TextureRect
 
 func _ready():
 	rotate(Vector2.UP.angle())
+	position.x = 0
+	position.y = 0
 
 
 func _process(delta):
 	pass 
 	
 func _physics_process(delta):
-	position.x += 1
-	position.y += 1
+	position.x += 10
 
