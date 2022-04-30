@@ -1,16 +1,41 @@
-[gd_scene format=2]
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Logo.tres" type="DynamicFont" id=1]
+[ext_resource path="res://StartGameButton.gd" type="Script" id=2]
+[ext_resource path="res://Bold.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Regular.tres" type="DynamicFont" id=4]
+[ext_resource path="res://ExitGameButton.gd" type="Script" id=5]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="GameLogo" type="RichTextLabel" parent="."]
 anchor_right = 0.228
 anchor_bottom = 0.2
-margin_left = 216.0
+margin_left = 111.0
 margin_top = 121.0
-margin_right = 617.528
-margin_bottom = 111.0
+margin_right = 777.528
+margin_bottom = 126.0
+custom_fonts/normal_font = ExtResource( 1 )
 bbcode_enabled = true
 bbcode_text = "RUSH OF THE MACHINES"
 text = "RUSH OF THE MACHINES"
+
+[node name="StartGameButton" type="Button" parent="."]
+margin_left = 486.0
+margin_top = 271.0
+margin_right = 566.0
+margin_bottom = 291.0
+custom_fonts/font = ExtResource( 3 )
+text = "Start game"
+script = ExtResource( 2 )
+
+[node name="ExitGameButton" type="Button" parent="."]
+margin_left = 493.0
+margin_top = 313.0
+margin_right = 577.0
+margin_bottom = 341.0
+custom_fonts/font = ExtResource( 4 )
+text = "Exit game"
+script = ExtResource( 5 )
