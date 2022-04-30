@@ -6,10 +6,12 @@ extends KinematicBody2D
 # var b = "text"
 
 # export ()
-onready var texture = $TextureRect
+onready var blue = $BlueCar
+onready var green = $GreenCar
+onready var red = $RedCar
 
 func _ready():
-	rotate(Vector2.UP.angle())
+	rotate(Vector2.RIGHT.angle())
 	position.x = 0
 	position.y = 0
 
