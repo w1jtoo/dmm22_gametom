@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Logo.tres" type="DynamicFont" id=1]
-[ext_resource path="res://StartGameButton.gd" type="Script" id=2]
-[ext_resource path="res://Bold.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Button2.gd" type="Script" id=2]
 [ext_resource path="res://MenuWorld.tscn" type="PackedScene" id=4]
 [ext_resource path="res://big_union_title_4.png" type="Texture" id=5]
+[ext_resource path="res://Button.gd" type="Script" id=6]
+[ext_resource path="res://Pictures/devs_button.png" type="Texture" id=7]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -45,17 +46,25 @@ bbcode_text = "RUSH OF THE MACHINES"
 meta_underlined = false
 text = "RUSH OF THE MACHINES"
 
-[node name="StartGameButton" type="Button" parent="."]
-margin_left = 385.0
-margin_top = 236.0
-margin_right = 629.0
-margin_bottom = 264.0
-custom_fonts/font = ExtResource( 3 )
-text = "Start game"
-script = ExtResource( 2 )
-
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color( 0.168627, 0.0196078, 0, 1 )
 self_modulate = Color( 0.0980392, 0.0196078, 0.0196078, 1 )
 margin_right = 1035.0
 margin_bottom = 606.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 698.0
+margin_top = 333.0
+margin_right = 966.0
+margin_bottom = 595.0
+icon = ExtResource( 7 )
+flat = true
+script = ExtResource( 6 )
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 263.0
+margin_top = 273.0
+margin_right = 463.0
+margin_bottom = 323.0
+text = "PLAY?"
+script = ExtResource( 2 )

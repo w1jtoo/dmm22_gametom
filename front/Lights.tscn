@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CheckButton.gd" type="Script" id=1]
+
+[node name="Lights" type="Node2D"]
+z_index = 1
+
+[node name="CheckButton" type="Button" parent="."]
+margin_right = 76.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
